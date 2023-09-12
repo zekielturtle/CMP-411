@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="hello.css">
+  <script> 
+    function sayHi() {
+        var newname = document.getElementById("name").value;
+        if (newname.toLowerCase() === "zeke") {
+            document.getElementById("greeting").innerHTML = "Stop testing things it works";
+        } else if (newname.toLowerCase() === "alec") {
+            document.getElementById("greeting").innerHTML = "Welcome Alec, you get a little extra pizazz";
+        } else {
+            document.getElementById("greeting").innerHTML = "Welcome " + newname + "!";
+        }
+        
+    }
+  </script>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <form autocomplete = "off">
+        <label for="name">What's your name?</label>
+        <input type="text" id="name" name="name"><br>
+    </form> 
+
+    <button onclick="sayHi()">Submit</button>
+
+<p id = "greeting"> </p>
+
+</body>
+</html>

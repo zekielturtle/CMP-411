@@ -1,0 +1,14 @@
+body {
+    background-color: lightblue;
+  }
+  h1 {
+    color: red;
+    font-size: 300%
+  }
+  body{
+    margin-left: 20px;
+  }
+  p {
+    color: navy;
+    font-size: 150%;
+  }
