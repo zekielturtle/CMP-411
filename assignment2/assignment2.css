@@ -1,0 +1,71 @@
+
+.flexboxRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#flexheadRight{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#flexheadRight > div{
+    flex:33%;
+    max-width: 33%;
+}
+.flexboxCol{
+    flex: 25%;
+    max-width: 25%;
+}
+.flexHeadCol{
+    flex: 50%;
+    max-width: 50%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 300;
+    background-color: orange;
+}
+.map{
+    flex:75%;
+    max-width: 75%;
+    margin: 10px;
+}
+.contact{
+    flex:25%;
+    max-width: 25%;
+}
+
+@media (max-width: 600px){
+    /*I have zero clue why this worked but just .flexboxCol didn't*/
+    #flexCol1,#flexCol2,#flexCol3,#flexCol4{
+        flex:100%;
+        max-width: 100%;
+    }
+    .flexHeadCol{
+        flex:100%;
+        max-width: 100%;
+    }
+    
+}
+@media (max-width: 800px){
+    .flexboxCol{
+        flex:50%;
+        max-width:50%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .map,.contact{
+        flex: 1;
+        width: 100%;
+    }
+}
+#headFlex{
+    background-color: lightblue;
+}
+body{
+    background-color: antiquewhite;
+}
